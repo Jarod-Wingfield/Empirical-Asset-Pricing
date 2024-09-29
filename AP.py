@@ -1,25 +1,21 @@
 ##########################################
 # Asset pricing                          #
-# Wu Jiaying                             #
+# Jiaying Wu                             #
 # Date: Sep. 2023                        #
 # Updated: Sept. 28th 2024               #
 ##########################################
-# Note:
-# The class is used for univariate and bivariate sorting, as well as Fama-MacBeth regression.
-# The Compustat and CRSP blocks load accounting and stock price data, while the CCM block links Compustat and CRSP.
-# The functions for Table 1, Table 2, and Table 3 correspond to univariate sorting, bivariate sorting, and Fama-MacBeth regression, respectively.
-# The Interest Variables block is used to merge a unique dataset containing the variables aimed at seeking alpha. (Writing code to merge ccm_month_win with other dataset)
-##########################################
+
+##############################################################################################
 
 # *** For the use of relevant options, please refer to the specific function descriptions. ***
 
 ## Call this package outside .py ##
 # from AP import AP_table
 
-######################################################################
+##############################################################################################
 # Compustat and CRSP data are downloaded from WRDS,
 # while factors are obtained from the Kenneth R. French Data Library.
-######################################################################
+##############################################################################################
 
 # AP=AP_table(data_path='',time_range=['20000101','20221231'],portfolio_month=6)
 # AP.Compustat(file='WRDS/Compustat_2000_2022.csv')
